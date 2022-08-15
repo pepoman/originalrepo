@@ -18,8 +18,10 @@ jobs:
       run: |
         git config --local user.email "devops@butchershop.co"
         git config --local user.name "devops"
+        git remote add origin git@github.com:pepoman/originalrepo.git
         git add --all
         git commit -m "Build for Server"
+        git remote add origin git@github.com:pepoman/originalrepo.git
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
