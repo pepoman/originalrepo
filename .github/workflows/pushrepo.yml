@@ -20,7 +20,6 @@ jobs:
         git config --local user.name "devops"
         git add --all
         git commit -m "Build for Server"
-        git push --force
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
