@@ -17,7 +17,7 @@ jobs:
         source_folder: '.'
         destination_repo: 'pepoman/originalrepo'
         destination_folder: '.'
-        destination_base_branch: 'main'
+        destination_base_branch: 'develop'
         destination_head_branch: 'main'
         user_email: 'devops@butchershop.co'
         user_name: 'devops'
