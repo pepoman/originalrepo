@@ -21,3 +21,6 @@ jobs:
             git@github.com:pepoman/originalrepo.git
           ssh_private_key:                              # <-- use 'secrets' to pass credential information.
             ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: debug changes made
+        run: |
+          ls -l
