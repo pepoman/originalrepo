@@ -14,4 +14,4 @@ jobs:
           target_repo_url:
             git@github.com:pepoman/originalrepo.git
           ssh_private_key:                              # <-- use 'secrets' to pass credential information.
-            ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
+            ${{ secrets.SSH_PRIVATE_KEY }}
