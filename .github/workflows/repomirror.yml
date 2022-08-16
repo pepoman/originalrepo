@@ -12,8 +12,9 @@ jobs:
       - name: Create local changes
         run: |
           echo "temporary build flag"
-           npm install
-           npm run generate
+          touch tempfile.txt
+          # npm install
+          # npm run generate
       - uses: pixta-dev/repository-mirroring-action@v1
         with:
           target_repo_url:
