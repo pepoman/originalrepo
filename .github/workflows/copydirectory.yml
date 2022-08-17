@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: run npm install  
-        run:  touch generatedfile.txt
+        run:  mkdir .output && touch .output/generatedfile.txt
       #- name: run build
       #  run:  npm run generate
       - name: Pushes to another repository
