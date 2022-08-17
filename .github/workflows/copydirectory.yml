@@ -26,5 +26,6 @@ jobs:
           user-email: devops@butchershop.co
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
           target-branch: develop
+          target-directory: .output
       - name: Test get variable exported by push-to-another-repository
         run: echo $DESTINATION_CLONED_DIRECTORY
