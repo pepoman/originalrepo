@@ -21,8 +21,8 @@ jobs:
           SSH_DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           source-directory: .output/
-          destination-github-username: 'devops'
-          destination-repository-name: 'pepoman/originalrepo'
+          destination-github-username: 'pepoman'
+          destination-repository-name: 'originalrepo'
           user-email: devops@butchershop.co
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
           target-branch: develop
