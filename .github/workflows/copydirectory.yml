@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: run npm install  
-        run:  mkdir .output && touch .output/generatedfile.txt
+        run:  mkdir .output && touch .output/generatedfile.txt & mkdir uploads 
       #- name: run build
       #  run:  npm run generate
       - name: Pushes to another repository
@@ -20,7 +20,7 @@ jobs:
         env:
           SSH_DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
-          source-directory: /.output/
+          source-directory: .output/ uploads
           destination-github-username: 'pepoman'
           destination-repository-name: 'originalrepo'
           user-email: devops@butchershop.co
