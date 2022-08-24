@@ -9,5 +9,5 @@ jobs:
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
-        args: copy spaces-sfo3:github-test1 .
-        run: ls
+        args: tree spaces-sfo3:github-test1
+        run: ls -l
