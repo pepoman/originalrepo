@@ -10,4 +10,6 @@ jobs:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
         args: copy spaces-sfo3:github-test1/TestingFolder/api .
-        run: ls -l
+        run: |
+          pwd
+          ls -l
