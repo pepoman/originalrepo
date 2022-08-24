@@ -9,4 +9,4 @@ jobs:
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
-        args: lsd spaces-sfo3:
+        args: lsd spaces-sfo3:bam
